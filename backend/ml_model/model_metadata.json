@@ -1,0 +1,30 @@
+{
+  "base_model_name": "microsoft/deberta-v3-small",
+  "model_type": "hybrid_deberta_numeric_classifier",
+  "max_length": 192,
+  "numeric_columns": [
+    "source_trust_score",
+    "similarity_score",
+    "entailment_score",
+    "contradiction_score",
+    "neutral_score",
+    "source_agreement_score",
+    "evidence_coverage_score"
+  ],
+  "label2id": {
+    "Credible": 0,
+    "Questionable": 1,
+    "Misleading": 2
+  },
+  "id2label": {
+    "0": "Credible",
+    "1": "Questionable",
+    "2": "Misleading"
+  },
+  "num_labels": 3,
+  "classes": [
+    "Credible",
+    "Questionable",
+    "Misleading"
+  ]
+}
