@@ -1,0 +1,48 @@
+# Commit only the application source folders from the repository root.
+/*
+!/frontend/
+!/backend/
+!/.gitignore
+
+# Local environment secrets
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+frontend/*.tsbuildinfo
+
+# Backend virtual environments and caches
+backend/.venv/
+backend/venv/
+backend/env/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/htmlcov/
+backend/.coverage
+
+# Large local ML artifacts: keep these outside normal Git commits.
+backend/ml_model/*.pt
+backend/ml_model/*.pth
+backend/ml_model/*.onnx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE/editor local state
+.vscode/
+.idea/
